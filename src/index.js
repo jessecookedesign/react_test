@@ -20,18 +20,26 @@ function MyNav() {
   );
 }
 
-function InfoCard() {
+function InfoCard({ name, location, age, description }) {
   return (
     <div className="info_card">
-      <h2>{info_primary}</h2>
-      <h3>{info_secondary}</h3>
-      <p>{info_description}</p>
+      <h2>{name}</h2>
+      <h3>{location}</h3>
+      <h4>{age}</h4>
+      <p>{description}</p>
     </div>
   );
 }
 
 ReactDOM.render(
   React.createElement(<MyNav />),
-  React.createElement(<InfoCard />),
+  React.createElement(
+    <InfoCard
+      name="Jesse"
+      location="Duluth"
+      age={25}
+      description="Email and Web Developer"
+    />
+  ),
   document.getElementById("root")
 );
