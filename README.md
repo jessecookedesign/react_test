@@ -1,2 +1,2 @@
-# react_test
+# My first React project
  
