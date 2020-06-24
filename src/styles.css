@@ -1,10 +1,78 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+/* OVERALL STYLES */
+:root {
+  --color-gray-light: #868d9b;
+  --color-gray: #2a2c31;
+  --color-gray-dark: #1f2024;
+  --color-offwhite: #f1f1f1;
+  --color-orange: #ff6c40;
+  --color-blue: #27bfea;
+  --color-yellow: #eac703;
+}
+::selection {
+  background: var(--color-gray-light);
+}
+::-moz-selection {
+  background: var(--color-gray-light);
+}
+body {
+  background-color: var(--color-offwhite);
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-family: titling-gothic-fb, sans-serif;
+  font-weight: 700;
+  letter-spacing: -2px;
+  font-size: 70px;
+  line-height: 60px;
+  color: var(--color-gray-dark);
+}
+h2 {
+  font-family: titling-gothic-fb, sans-serif;
+  font-weight: normal;
+  letter-spacing: -2px;
+  font-size: 48px;
+  line-height: 50px;
+  color: var(--color-gray-dark);
+}
+h3 {
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 1.5;
+  color: var(--color-gray-dark);
+}
+h4 {
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 1.5;
+  color: var(--color-gray-dark);
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.info_card {
-  padding: 50px;
-  margin: 30px;
-  box-shadow: 2px 2px 2px #343434;
+/* Main nav */
+.myNav {
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.myNav ul {
+  width: 50%;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  font-family: sans-serif;
+}
+
+.myNav li a {
+  color: var(--color-gray-dark);
+}
+
+.myNav li a:hover {
+  color: var(--color-orange);
 }
