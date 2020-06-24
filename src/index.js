@@ -4,16 +4,13 @@ import "./styles.css";
 
 function MyNav() {
   return (
-    <nav>
+    <nav className="myNav">
       <ul>
         <li>
           <a href="#">Home</a>
         </li>
         <li>
           <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Blog</a>
         </li>
       </ul>
     </nav>
@@ -31,15 +28,5 @@ function InfoCard({ name, location, age, description }) {
   );
 }
 
-ReactDOM.render(
-  React.createElement(<MyNav />),
-  React.createElement(
-    <InfoCard
-      name="Jesse"
-      location="Duluth"
-      age={25}
-      description="Email and Web Developer"
-    />
-  ),
-  document.getElementById("root")
-);
+ReactDOM.render(<MyNav />, document.getElementById("area_nav"));
+ReactDOM.render(<InfoCard />, document.getElementById("area_body_content"));
