@@ -2,6 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./styles.css";
 
+function App() {
+  return (
+    <div id="app_container">
+      <div id="area_nav" />
+      <div id="cards_container" />
+      <div id="footer" />
+    </div>
+  );
+}
+
 function MyNav() {
   return (
     <nav className="myNav">
@@ -55,6 +65,14 @@ function FooterText() {
   return <p className="footer_text">This site is built with ReactJS</p>;
 }
 
+{
+  /* Render App */
+}
+ReactDOM.render(<App />, document.getElementById("root"));
+
+{
+  /* Render components into App */
+}
 ReactDOM.render(<MyNav />, document.getElementById("area_nav"));
 ReactDOM.render(
   <InfoCard dataRender={cardData} />,
