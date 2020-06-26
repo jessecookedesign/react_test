@@ -50,7 +50,7 @@ const cardData = [
 
 function InfoCard({ dataRender }) {
   return (
-    <div>
+    <div id="main_card_container">
       {dataRender.map(data => (
         <div key={data.id} className="business_card_container">
           <div>
