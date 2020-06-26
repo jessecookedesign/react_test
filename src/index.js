@@ -36,25 +36,36 @@ const cardData = [
     category: "web design",
     tag1: "freelancer",
     tag2: "creative"
+  },
+  {
+    id: "2",
+    imgsrc: "https://i.ibb.co/fqs783v/dspclogo.png",
+    imgalt: "Duluth Screen Printing Co logo",
+    name: "Duluth Screen Printing Co.",
+    category: "printing",
+    tag1: "affordable",
+    tag2: "eco-friendly"
   }
 ];
 
 function InfoCard({ dataRender }) {
   return (
-    <div className="business_card_container">
+    <div>
       {dataRender.map(data => (
-        <div>
-          <img src={data.imgsrc} alt={data.imgalt} border="0" />
-          <h2>{data.name}</h2>
-          <p className="business_card_category">{data.category}</p>
-          <ul className="business_card_tags">
-            <li>
-              <p>{data.tag1}</p>
-            </li>
-            <li>
-              <p>{data.tag2}</p>
-            </li>
-          </ul>
+        <div key={data.id} className="business_card_container">
+          <div>
+            <img src={data.imgsrc} alt={data.imgalt} border="0" />
+            <h2>{data.name}</h2>
+            <p className="business_card_category">{data.category}</p>
+            <ul className="business_card_tags">
+              <li>
+                <p>{data.tag1}</p>
+              </li>
+              <li>
+                <p>{data.tag2}</p>
+              </li>
+            </ul>
+          </div>
         </div>
       ))}
     </div>
