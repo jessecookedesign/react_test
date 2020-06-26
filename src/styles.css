@@ -79,7 +79,7 @@ a {
 
 /* Cards */
 
-#cards_container {
+#main_card_container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
