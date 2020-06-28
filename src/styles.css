@@ -83,7 +83,7 @@ a {
 }
 
 .business_card_container:hover {
-  border: 3px solid var(--color-orange);
+  border: 2px solid var(--color-orange);
 }
 
 @media only screen and (max-width: 1000px) {
