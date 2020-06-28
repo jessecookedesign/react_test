@@ -97,17 +97,17 @@ function InfoCard({ dataRender }) {
             <p className="business_card_category">{data.category}</p>
             <ul className="business_card_info">
               <li>
-                <a href={data.addresslink}>
+                <a href={data.addresslink} target="_blank">
                   <p>{data.address}</p>
                 </a>
               </li>
               <li>
-                <a href={data.websitelink}>
+                <a href={data.websitelink} target="_blank">
                   <p>{data.website}</p>
                 </a>
               </li>
               <li>
-                <a href={data.phonelink}>
+                <a href={data.phonelink} target="_blank">
                   <p>{data.phone}</p>
                 </a>
               </li>
