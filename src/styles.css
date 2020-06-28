@@ -4,21 +4,24 @@
   --color-gray: #2a2c31;
   --color-gray-dark: #1f2024;
   --color-offwhite: #f1f1f1;
-  --color-orange: #ff6c40;
-  --color-blue: #27bfea;
-  --color-yellow: #eac703;
+  --color-orange: #fb523e;
+  --color-blue: #0d577e;
 }
+
 ::selection {
   background: var(--color-gray-light);
 }
+
 ::-moz-selection {
   background: var(--color-gray-light);
 }
+
 body {
   background-color: var(--color-offwhite);
   margin: 0;
   padding: 0;
 }
+
 h1 {
   font-family: DM Sans, sans-serif;
   font-weight: 700;
@@ -27,26 +30,7 @@ h1 {
   line-height: 60px;
   color: var(--color-gray-dark);
 }
-h2 {
-  font-family: DM Sans, sans-serif;
-  font-weight: normal;
-  letter-spacing: -2px;
-  font-size: 48px;
-  line-height: 50px;
-  color: var(--color-gray-dark);
-}
-h3 {
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 1.5;
-  color: var(--color-gray-dark);
-}
-h4 {
-  font-weight: normal;
-  font-size: 28px;
-  line-height: 1.5;
-  color: var(--color-gray-dark);
-}
+
 a {
   cursor: pointer;
   text-decoration: none;
@@ -56,6 +40,7 @@ a {
 .myNav {
   width: 100%;
   padding: 20px 0px;
+  background-color: var(--color-blue);
 }
 
 .myNav ul {
@@ -70,7 +55,8 @@ a {
 }
 
 .myNav li a {
-  color: var(--color-gray-dark);
+  color: var(--color-offwhite);
+  font-family: DM Sans, sans-serif;
 }
 
 .myNav li a:hover {
@@ -97,7 +83,7 @@ a {
 }
 
 .business_card_container:hover {
-  border: 3px solid #fb523e;
+  border: 3px solid var(--color-orange);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -146,8 +132,8 @@ a {
 
 .business_card_tags li p {
   font-size: 14px;
-  color: #0d577e;
-  border-bottom: 2px dashed #0d577e;
+  color: var(--color-blue);
+  border-bottom: 2px dashed var(--color-blue);
   font-family: Cousine, monospace;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -157,6 +143,10 @@ a {
 
 .business_card_tags li:nth-child(2) {
   padding-left: 20px;
+}
+
+.business_card_tags li p:hover {
+  border-bottom: 2px solid #0d577e;
 }
 
 /* Footer */
