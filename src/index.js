@@ -45,6 +45,15 @@ const cardData = [
     category: "printing",
     tag1: "affordable",
     tag2: "eco-friendly"
+  },
+  {
+    id: "3",
+    imgsrc: "https://i.ibb.co/SDg1gcW/yourlogohere.jpg",
+    imgalt: "",
+    name: "Business Name",
+    category: "category here",
+    tag1: "tag one",
+    tag2: "tag two"
   }
 ];
 
